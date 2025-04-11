@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8000
 
 # 使用 uvicorn 启动，并加载环境变量（自动识别 .env）
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--workers", "4","--port", "8000","--reload"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000","--reload"]
